@@ -1,0 +1,152 @@
+{
+  "failedCommits": [
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "546f4e30fabebbf3fcc3b5e5c2976ca7aebc1632",
+      "repoName": "apache/camel",
+      "commitUrl": "https://github.com/apache/camel/commit/546f4e30fabebbf3fcc3b5e5c2976ca7aebc1632"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "09580ad24078634590f603f61013cb3675824bae",
+      "repoName": "quarkusio/quarkus",
+      "commitUrl": "https://github.com/quarkusio/quarkus/commit/09580ad24078634590f603f61013cb3675824bae"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "1977e8627e0fb24d83eb25cdb3d4ed2418118ad7",
+      "repoName": "quarkusio/quarkus",
+      "commitUrl": "https://github.com/quarkusio/quarkus/commit/1977e8627e0fb24d83eb25cdb3d4ed2418118ad7"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "f615014b80ab06c412d94d3d93625b84b471d15f",
+      "repoName": "quarkusio/quarkus",
+      "commitUrl": "https://github.com/quarkusio/quarkus/commit/f615014b80ab06c412d94d3d93625b84b471d15f"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "7220ff076e828dcd37af40804d5ed540305ea2f9",
+      "repoName": "navikt/veilarbportefolje",
+      "commitUrl": "https://github.com/navikt/veilarbportefolje/commit/7220ff076e828dcd37af40804d5ed540305ea2f9"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "df54c9171f02c9c9f687df32d45183076ee59975",
+      "repoName": "FDelporte/ResistorCalculatorApp",
+      "commitUrl": "https://github.com/FDelporte/ResistorCalculatorApp/commit/df54c9171f02c9c9f687df32d45183076ee59975"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "73a3cc46f1963674df13cec048a7f200f050bf97",
+      "repoName": "INTO-CPS-Association/maestro",
+      "commitUrl": "https://github.com/INTO-CPS-Association/maestro/commit/73a3cc46f1963674df13cec048a7f200f050bf97"
+    },
+    {
+      "isTravisFailed": true,
+      "isGithubActionsFailed": false,
+      "commitId": "3b3c20c1a75b951f1140dc0715e96590a79ae6ec",
+      "repoName": "fangjinuo/audit",
+      "commitUrl": "https://github.com/fangjinuo/audit/commit/3b3c20c1a75b951f1140dc0715e96590a79ae6ec"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "3b03c2bf0ac41d55d15848b7c2ce9ebb4f8a2c13",
+      "repoName": "BetonQuest/BetonQuest",
+      "commitUrl": "https://github.com/BetonQuest/BetonQuest/commit/3b03c2bf0ac41d55d15848b7c2ce9ebb4f8a2c13"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "8c1cafff544186e7edc7020e86278887d638d775",
+      "repoName": "fred4jupiter/fredbet",
+      "commitUrl": "https://github.com/fred4jupiter/fredbet/commit/8c1cafff544186e7edc7020e86278887d638d775"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "ea5bb78d2d68c2d77207b1ac0dcba41cdea70310",
+      "repoName": "HSGamer/HSCore",
+      "commitUrl": "https://github.com/HSGamer/HSCore/commit/ea5bb78d2d68c2d77207b1ac0dcba41cdea70310"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "a4f97385da885c8ba7c48ad534ad1334065e0c9f",
+      "repoName": "HSGamer/HSCore",
+      "commitUrl": "https://github.com/HSGamer/HSCore/commit/a4f97385da885c8ba7c48ad534ad1334065e0c9f"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "57f519515de9c2c3f1a2bba7ab4f92cfbd84af2c",
+      "repoName": "artipie/artipie",
+      "commitUrl": "https://github.com/artipie/artipie/commit/57f519515de9c2c3f1a2bba7ab4f92cfbd84af2c"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "a1cf30a5f49bdbe0def2770207746543bdada7c7",
+      "repoName": "apache/pulsar",
+      "commitUrl": "https://github.com/apache/pulsar/commit/a1cf30a5f49bdbe0def2770207746543bdada7c7"
+    },
+    {
+      "isTravisFailed": true,
+      "isGithubActionsFailed": false,
+      "commitId": "51034be2708b7d98899c747ca99c5f301885134b",
+      "repoName": "apache/cloudstack",
+      "commitUrl": "https://github.com/apache/cloudstack/commit/51034be2708b7d98899c747ca99c5f301885134b"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "a4b28b5b4bb76916a6824035d7172591d335edda",
+      "repoName": "INTO-CPS-Association/FMI-VDM-Model",
+      "commitUrl": "https://github.com/INTO-CPS-Association/FMI-VDM-Model/commit/a4b28b5b4bb76916a6824035d7172591d335edda"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "d5a72fdb0b057bad0b319471cf67c42bbb1a398d",
+      "repoName": "warmuuh/milkman",
+      "commitUrl": "https://github.com/warmuuh/milkman/commit/d5a72fdb0b057bad0b319471cf67c42bbb1a398d"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "256b15747124024539de31274280893f5f80bd7e",
+      "repoName": "warmuuh/milkman",
+      "commitUrl": "https://github.com/warmuuh/milkman/commit/256b15747124024539de31274280893f5f80bd7e"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "b240f2ba10a4beb34846e694b2533434cfcdd026",
+      "repoName": "warmuuh/milkman",
+      "commitUrl": "https://github.com/warmuuh/milkman/commit/b240f2ba10a4beb34846e694b2533434cfcdd026"
+    },
+    {
+      "isTravisFailed": true,
+      "isGithubActionsFailed": false,
+      "commitId": "6df59822949500e2aea6159e26fa235f90aea478",
+      "repoName": "camsys/onebusaway-application-modules",
+      "commitUrl": "https://github.com/camsys/onebusaway-application-modules/commit/6df59822949500e2aea6159e26fa235f90aea478"
+    },
+    {
+      "isTravisFailed": false,
+      "isGithubActionsFailed": true,
+      "commitId": "df1d106714c5129a6f922108fb7eedc7f2d9798a",
+      "repoName": "abstracta/jmeter-java-dsl",
+      "commitUrl": "https://github.com/abstracta/jmeter-java-dsl/commit/df1d106714c5129a6f922108fb7eedc7f2d9798a"
+    }
+  ],
+  "totalCount": 21
+}
