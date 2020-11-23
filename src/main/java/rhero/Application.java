@@ -79,39 +79,8 @@ public class Application {
 
             System.out.println("Checking projects updated: " + new Date(intervalStart) + " " + new Date(intervalEnd));
 
-            DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
-            String intervalStartStr = df.format(new Date(intervalStart));
-            intervalStartStr = intervalStartStr.substring(0, intervalStartStr.length() - 5) + "Z";
-
-            Set<String> repos = GithubAPIRepoAdapter.getInstance()
-                    .listJavaRepositories(intervalStartStr, 1, GithubAPIRepoAdapter.MAX_STARS);
-
-            int cnt = 0;
-            List<FailedCommit> failedCommits = new ArrayList<>();
-            for (String repoName : repos) {
-                try {
-                    GHRepository repo = GAA.g().getRepository(repoName);
-                    boolean isMaven = false;
-                    for (GHTreeEntry treeEntry : repo.getTree("HEAD").getTree()) {
-                        if (treeEntry.getPath().equals("pom.xml")) {
-                            isMaven = true;
-                            break;
-                        }
-                    }
-
-                    if (!isMaven)
-                        continue;
-
-                    System.out.println("Checking commits for: " + repo.getName() + " " + cnt++ + " " + repos.size()
-                            + " " + new Date(intervalStart));
-                    failedCommits.addAll(GithubAPICommitAdapter.getInstance()
-                            .getFailedCommits(repo, intervalStart, intervalEnd));
-
-                } catch (Exception e) {
-                    System.err.println("error occurred for: " + repoName);
-                    e.printStackTrace();
-                }
-            }
+            List<FailedCommit> failedCommits = GithubAPICommitAdapter.getInstance()
+                    .getFailedCommits(intervalStart, intervalEnd);
 
             SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd-HH");
             String intervalStartFileName = format.format(new Date(intervalStart));
@@ -121,6 +90,7 @@ public class Application {
             fw.close();
         }
     }
+
 }
 
 @RestController

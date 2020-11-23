@@ -5,6 +5,9 @@ import org.kohsuke.github.GHRepositorySearchBuilder;
 import rhero.githubapi.GAA;
 
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -47,5 +50,13 @@ public class GithubAPIRepoAdapter {
         }
 
         return res;
+    }
+
+    public Set<String> listJavaRepositories(long intervalStart, int min, int max) throws IOException {
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssZ");
+        String intervalStartStr = df.format(new Date(intervalStart));
+        intervalStartStr = intervalStartStr.substring(0, intervalStartStr.length() - 5) + "Z";
+
+        return listJavaRepositories(intervalStartStr, min, max);
     }
 }
