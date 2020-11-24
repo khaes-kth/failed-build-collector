@@ -9,7 +9,7 @@ import java.io.IOException;
 
 // GAM stands for: Github Api Adapter
 public class GAA {
-    private static final String TOKENS_PATH = "files" + File.separator + "tokens";
+    private static final String TOKENS_PATH = "files" + File.separator + "config.ini";
     private static int lastUsedToken = 0;
 
     public static GitHub g() throws IOException {
@@ -18,7 +18,7 @@ public class GAA {
 
     static {
         try {
-            tokens = FileUtils.readLines(new File("files\\config.ini"),
+            tokens = FileUtils.readLines(new File(TOKENS_PATH),
                     "UTF-8").toArray(new String[0]);
         } catch (IOException e) {
             e.printStackTrace();
