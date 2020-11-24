@@ -61,6 +61,8 @@ public class GithubAPICommitAdapter {
         for (String repoName : repos) {
             try {
                 GHRepository repo = GAA.g().getRepository(repoName);
+                System.out.println("Checking commits for: " + repo.getName() + " " + cnt++ + " " + repos.size()
+                        + " " + new Date(intervalStart));
                 boolean isMaven = false;
                 for (GHTreeEntry treeEntry : repo.getTree("HEAD").getTree()) {
                     if (treeEntry.getPath().equals("pom.xml")) {
@@ -69,11 +71,10 @@ public class GithubAPICommitAdapter {
                     }
                 }
 
-                if (!isMaven)
+                if (!isMaven) {
                     continue;
+                }
 
-                System.out.println("Checking commits for: " + repo.getName() + " " + cnt++ + " " + repos.size()
-                        + " " + new Date(intervalStart));
                 failedCommits.addAll(GithubAPICommitAdapter.getInstance()
                         .getFailedCommits(repo, intervalStart, intervalEnd));
 
