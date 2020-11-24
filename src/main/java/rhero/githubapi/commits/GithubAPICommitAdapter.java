@@ -29,13 +29,13 @@ public class GithubAPICommitAdapter {
             boolean isGithubActionsFailed = false, isTravisFailed = false;
             for (GHCheckRun check : commit.getCheckRuns()) {
                 if (check.getApp().getName().equals("Travis CI") && !isTravisFailed) {
-                    if (check.getConclusion() == null || (!check.getConclusion().equals("success")
+                    if (check.getConclusion() != null && (!check.getConclusion().equals("success")
                             && !check.getConclusion().equals("neutral") && !check.getConclusion().equals("skipped"))) {
                         isTravisFailed = true;
                     }
                 }
                 if (check.getApp().getName().equals("GitHub Actions") && !isGithubActionsFailed) {
-                    if (check.getConclusion() == null || (!check.getConclusion().equals("success")
+                    if (check.getConclusion() != null && (!check.getConclusion().equals("success")
                             && !check.getConclusion().equals("neutral") && !check.getConclusion().equals("skipped"))) {
                         isGithubActionsFailed = true;
                     }
